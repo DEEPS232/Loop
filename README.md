@@ -1,84 +1,61 @@
-# Loop
-Using loops 
+from random import randint
 
-#While:
-count = 0
+# Generates a number from 1 through 10 inclusive
+random_number = randint(1, 10)
 
-if count < 5:
-  print "Hello, I am an if statement and count is", count
-#will meet condition if it is true
-
-
-while count < 5:
-  print "Hello, I am a while and count is", count
-  count += 1
-  #will continue to loop until it reaches condition. 
-
-
-#Excercise, make count to 9, can either be set to <10 or <=9
-
-
-while count <= 9:
-  print "Hello, I am a while and count is", count
-  count += 1
-  #will print "" statement 9 times with the count included.
-  #-------------#
-  
-#Condition:
-
-
-loop_condition = True
-
-while loop_condition:
-  print "I am a loop"
-  loop_condition = False
-
-#The loop_condition is set to true, when it is it will it print statement, it is not the second time, so process terminates.
-
-
-
-num = 1
-
-while num <= 10:   # Fill in the condition
-  # Print num squared
-  print num**2
-  # Increment num (make sure to do this!) #This will limit the number of times the code will loop 
-  num += 1
-  
-  
-  #1.
-Fill in the loop condition so the user will be prompted for a choice over and over while choice does not equal 'y' and choice does not equal 'n'.
-
-  choice = raw_input('Enjoying the course? (y/n)')
-
-while ________:  # Fill in the condition (before the colon)
-  choice = raw_input("Sorry, I didn't catch that. Enter again: ")
-
-  
-  
-  choice = raw_input('Enjoying the course? (y/n)')
-
-while choice != "y" and choice != "n" :  # Fill in the condition (before the colon)   #!= mean does not equal 
-  choice = raw_input("Sorry, I didn't catch that. Enter again: ")
---------
-# Counting and infinite loops, when we do not incremnet (ie item += 1 or item -= 1) it will print forever. 
-
-count = 0
-
-while count < 10: # Add a colon
-  print count
-  # Increment count
-  count += 1
-  
--------
-
-#Break (Will stop the loop "if" a condition is met).
-
-count = 0
-
-while True:
-  print count
-  count += 1
-  if count >= 10:   #> 10- will stop at 10, <10- will stop at 0, >= 10- will stop at 9, <=10, will stop at 9
+guesses_left = 3
+# Start your game!
+while guesses_left > 0:
+  guess = int(raw_input("Your guess: "))
+  if guess == random_number:
+    print "You win!"
     break
+   guesses_left -= 1
+else:
+    print "You lose."
+   # Mine
+   
+   # Solution 
+   
+   
+   
+   from random import randint
 
+# Generates a number from 1 through 10 inclusive
+random_number = randint(1, 10)
+
+guesses_left = 3
+# Start your game!
+while guesses_left > 0:
+  guess = int(raw_input("Your guess: "))
+  if guess == random_number:
+    print "You win!"
+    break
+  guesses_left -= 1
+else:
+  print "You lose."
+  
+  
+  
+  # mine again
+  
+  from random import randint
+
+# Generates a number from 1 through 10 inclusive
+random_number = randint(1, 10)
+
+guesses_left = 3
+# Start your game!
+while guesses_left > 0:
+  guess = int(raw_input("your guess here: "))
+  if guess == random_number:
+    print "You win!"
+    break
+  guesses_left -= 1
+else:  
+  print "You lose."
+
+
+   
+   
+   
