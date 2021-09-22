@@ -42,8 +42,24 @@ num = 1
 while num <= 10:   # Fill in the condition
   # Print num squared
   print num**2
-  # Increment num (make sure to do this!)
+  # Increment num (make sure to do this!) #This will limit the number of times the code will loop 
   num += 1
   
+  
+  #1.
+Fill in the loop condition so the user will be prompted for a choice over and over while choice does not equal 'y' and choice does not equal 'n'.
+
+  choice = raw_input('Enjoying the course? (y/n)')
+
+while ________:  # Fill in the condition (before the colon)
+  choice = raw_input("Sorry, I didn't catch that. Enter again: ")
+
+  
+  
+  choice = raw_input('Enjoying the course? (y/n)')
+
+while choice != "y" and choice != "n" :  # Fill in the condition (before the colon)   #!= mean does not equal 
+  choice = raw_input("Sorry, I didn't catch that. Enter again: ")
+
   
 
