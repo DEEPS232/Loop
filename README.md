@@ -60,6 +60,25 @@ while ________:  # Fill in the condition (before the colon)
 
 while choice != "y" and choice != "n" :  # Fill in the condition (before the colon)   #!= mean does not equal 
   choice = raw_input("Sorry, I didn't catch that. Enter again: ")
+--------
+# Counting and infinite loops, when we do not incremnet (ie item += 1 or item -= 1) it will print forever. 
 
+count = 0
+
+while count < 10: # Add a colon
+  print count
+  # Increment count
+  count += 1
   
+-------
+
+#Break (Will stop the loop "if" a condition is met).
+
+count = 0
+
+while True:
+  print count
+  count += 1
+  if count >= 10:   #> 10- will stop at 10, <10- will stop at 0, >= 10- will stop at 9, <=10, will stop at 9
+    break
 
