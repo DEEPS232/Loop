@@ -1,84 +1,31 @@
 # Loop
-Using loops 
+Using a for loop, you can print out each individual character in a string.
 
-#While:
-count = 0
-
-if count < 5:
-  print "Hello, I am an if statement and count is", count
-#will meet condition if it is true
+The example in the editor is almost plain English: “for each character c in thing, print c“.
 
 
-while count < 5:
-  print "Hello, I am a while and count is", count
-  count += 1
-  #will continue to loop until it reaches condition. 
+thing = "spam!"
 
-
-#Excercise, make count to 9, can either be set to <10 or <=9
-
-
-while count <= 9:
-  print "Hello, I am a while and count is", count
-  count += 1
-  #will print "" statement 9 times with the count included.
-  #-------------#
-  
-#Condition:
-
-
-loop_condition = True
-
-while loop_condition:
-  print "I am a loop"
-  loop_condition = False
-
-#The loop_condition is set to true, when it is it will it print statement, it is not the second time, so process terminates.
-
-
-
-num = 1
-
-while num <= 10:   # Fill in the condition
-  # Print num squared
-  print num**2
-  # Increment num (make sure to do this!) #This will limit the number of times the code will loop 
-  num += 1
-  
-  
-  #1.
-Fill in the loop condition so the user will be prompted for a choice over and over while choice does not equal 'y' and choice does not equal 'n'.
-
-  choice = raw_input('Enjoying the course? (y/n)')
-
-while ________:  # Fill in the condition (before the colon)
-  choice = raw_input("Sorry, I didn't catch that. Enter again: ")
+for c in thing:
+  print c
 
   
-  
-  choice = raw_input('Enjoying the course? (y/n)')
+  print "&" 
 
-while choice != "y" and choice != "n" :  # Fill in the condition (before the colon)   #!= mean does not equal 
-  choice = raw_input("Sorry, I didn't catch that. Enter again: ")
---------
-# Counting and infinite loops, when we do not incremnet (ie item += 1 or item -= 1) it will print forever. 
+word = "eggs!"
 
-count = 0
+# Your code here!
+for i in word:
+  print i
 
-while count < 10: # Add a colon
-  print count
-  # Increment count
-  count += 1
-  
--------
 
-#Break (Will stop the loop "if" a condition is met).
+phrase = "A bird in the hand..."
 
-count = 0
+# Add your for loop
 
-while True:
-  print count
-  count += 1
-  if count >= 10:   #> 10- will stop at 10, <10- will stop at 0, >= 10- will stop at 9, <=10, will stop at 9
-    break
+for char in phrase:
+  if char == "A" or char == "a":
+      print "X", 
 
+  else:
+    print char,
