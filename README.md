@@ -1,31 +1,33 @@
-# Loop
-Using a for loop, you can print out each individual character in a string.
+# Looping over a dictionary
 
-The example in the editor is almost plain English: “for each character c in thing, print c“.
+# You may be wondering how looping over a dictionary would work. Would you get the key or the value?
 
+# The short answer is: you get the key which you can use to get the value: 
 
-thing = "spam!"
+  d = { 'x': 9, 'y': 10, 'z':20}
+  for key in d:
+    if d[key] == 10:
+     print "This dictionary has the value of 10!"
+ 
 
-for c in thing:
-  print c
+# 1. First, we create a dictionary with strings as the keys and numbers as the values. 
+# 2. Then, we iterate through the dictionary, each time storing the key in key.
+# 3 .Next, we check if that key’s value is equal to 10.
+# 4. If so, we print "This dictionary has the value 10!"
 
+     
+     
+ # Excersie:
+ 
+ 
+ d = {'a': 'apple', 'b': 'berry', 'c': 'cherry'}
+
+for key in d:
+  # Your code here!
+  print key, d[key]
   
-  print "&" 
-
-word = "eggs!"
-
-# Your code here!
-for i in word:
-  print i
-
-
-phrase = "A bird in the hand..."
-
-# Add your for loop
-
-for char in phrase:
-  if char == "A" or char == "a":
-      print "X", 
-
-  else:
-    print char,
+  # prints the following:
+  
+  a apple 
+  c cherry 
+  b berry 
