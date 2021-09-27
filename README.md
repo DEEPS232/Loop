@@ -1,33 +1,58 @@
-# Looping over a dictionary
+# Counting as you go
 
-# You may be wondering how looping over a dictionary would work. Would you get the key or the value?
+# A weakness of using this for-each style of iteration is that you don’t know the index of the thing you’re looking at. Generally this isn’t an issue, but at times it is useful to know how far into the list you are. Thankfully the built-in enumerate function helps with this.
 
-# The short answer is: you get the key which you can use to get the value: 
+# Enumerate works by supplying a corresponding index to each element in the list that you pass it. Each time you go through the loop, index will be one greater, and item will be the next item in the sequence. It’s very similar to using a normal for loop with a list, except this gives us an easy way to count how many items we’ve seen so far.
 
-  d = { 'x': 9, 'y': 10, 'z':20}
-  for key in d:
-    if d[key] == 10:
-     print "This dictionary has the value of 10!"
- 
 
-# 1. First, we create a dictionary with strings as the keys and numbers as the values. 
-# 2. Then, we iterate through the dictionary, each time storing the key in key.
-# 3 .Next, we check if that key’s value is equal to 10.
-# 4. If so, we print "This dictionary has the value 10!"
 
-     
-     
- # Excersie:
- 
- 
- d = {'a': 'apple', 'b': 'berry', 'c': 'cherry'}
 
-for key in d:
-  # Your code here!
-  print key, d[key]
-  
-  # prints the following:
-  
-  a apple 
-  c cherry 
-  b berry 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
