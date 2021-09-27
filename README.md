@@ -6,53 +6,14 @@
 
 
 
+# Example:
 
+choices = ['pizza', 'pasta', 'salad', 'nachos']
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+print 'Your choices are:'
+for index, item in enumerate(choices):
+  print index + 1, item
+  
+  # Will print itmns starting from index 1 rather than 0 
+  
 
