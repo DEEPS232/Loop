@@ -37,8 +37,57 @@ This means that, for this lesson, you can’t just test the input to see if it�
 If the difference between a number and that same number rounded is greater than zero, what does that say about that particular number?
 
 
-
 # Exercise:
+Define a function is_int that takes a number x as an input.
+
+Have it return True if the number is an integer (as defined above) and False otherwise.
+
+For example:
+is_int(7.0) # True
+is_int(7.5)  # False
+is_int(-1) # True
+
+def is_int(x):
+  absolute = abs(x)
+  rounded = round(absolute)
+  return absolute - rounded == 0 
+
+print is_int(15)
+print is_int(7.5)
+print is_int (0)
+ 
+
+# -----------# 
+
+# 3. digit_sum
+
+Awesome! Now let’s try something a little trickier. Try summing the digits of a number.
+
+# Excercise:
+Write a function called digit_sum that takes a positive integer n as input and returns the sum of all that number’s digits. For example: digit_sum(1234) should return 10 which is 1 + 2 + 3 + 4. (Assume that the number you are given will always be positive.)
+
+Check the hint if you need help!
+
+
+def digit_sum(n):
+  total = 0 
+  string_n = str(n)
+  for char in string_n:
+   total += int(char)
+   return total 
+
+
+def digit_sum(n):
+  total = 0
+  while n > 0:
+    total += n % 10
+    n = n // 10
+  return total 
+
+
+
+
+
 
 
 
