@@ -74,7 +74,7 @@ def digit_sum(n):
   string_n = str(n)
   for char in string_n:
    total += int(char)
-   return total 
+  return total 
 
 
 def digit_sum(n):
@@ -83,6 +83,19 @@ def digit_sum(n):
     total += n % 10
     n = n // 10
   return total 
+
+# --------------- #
+
+
+# 4. Factorial 
+ 
+ # All right! Now we’re cooking. Let’s try a factorial problem.
+
+To calculate the factorial of a non-negative integer x, just multiply all the integers from 1 through x. For example:
+
+    - factorial(4) would equal 4 * 3 * 2 * 1, which is 24.
+    - factorial(1) would equal 1.
+    - factorial(3) would equal 3 * 2 * 1, which is 6.
 
 
 
