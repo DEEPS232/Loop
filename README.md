@@ -99,6 +99,36 @@ To calculate the factorial of a non-negative integer x, just multiply all the in
 
 
 
+def factorial(x):
+  total = 1 
+  while x > 0:
+    total *= x
+    x -= 1
+  return total 
+
+print factorial (5)    
+
+
+
+
+
+
+
+
+# is_prime
+
+A prime number is a positive integer greater than 1 that has no positive divisors other than 1 and itself. (That’s a mouthful!)
+
+In other words, if you want to test if a number in a variable x is prime, then no other number should go into x evenly besides 1 and x. So 2 and 5 and 11 are all prime, but 4 and 18 and 21 are not.
+
+If there is a number between 1 and x that goes in evenly, then x is not prime.
+
+
+
+
+
+
+
 
 
 
