@@ -115,7 +115,7 @@ print factorial (5)
 
 
 
-# is_prime
+# 5. is_prime
 
 A prime number is a positive integer greater than 1 that has no positive divisors other than 1 and itself. (That’s a mouthful!)
 
@@ -125,10 +125,36 @@ If there is a number between 1 and x that goes in evenly, then x is not prime.
 
 
 
+def is_prime(x):
+    if x < 2:
+        return False
+    else:
+        for n in range(2, x-1):
+            if x % n == 0:
+                return False
+        return True
+
+print is_prime(13)
+print is_prime(10)
 
 
 
 
+# 6. Reverse:
+Define a function called reverse that takes a string textand returns that string in reverse. For example: reverse("abcd") should return "dcba".
+
+You may not use reversed or [::-1] to help you with this.
+
+You may get a string containing special characters (for example, !, @, or #).
+
+
+def reverse (text):
+    word = ""
+    l = len(text) - 1
+    while l >= 0:
+       word = word + text[l]
+       l -= 1
+    return word 
 
 
 
